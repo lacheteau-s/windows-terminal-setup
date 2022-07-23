@@ -7,7 +7,7 @@
 1. Open Powershell as an Administrator.
 2. Run the following command:
 
-    > wsl --install
+    > wsl --install -d Ubuntu
 
     This will install WSL with Ubuntu as the default distribution.
 3. Restart your computer. The installation will resume. This can take a few minutes.
@@ -47,26 +47,17 @@
 
 ## Install ZSH
 
-> sudo apt-get update
+1. Open Windows Terminal.
+2. Run the following command in Ubuntu:
 
-> sudo apt upgrade -y
+    > sh -c "$(sudo curl -fsSL https://raw.githubusercontent.com/lacheteau-s/windows-terminal-setup/main/setup.sh)"
 
-> sudo apt install zsh
+This will update existing packages and install required packages (git, curl), install and configure ZSH with Powerline fonts.
 
-> sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+## Improvements
 
-> nano .zshrc
-
-> ZSH_THEME="agnoster"
-
-> source .zshrc
-
-> git clone https://github.com/powerline/fonts.git
-
-In Powershell:
-
-> .\install.ps1
-
-In Windows Terminal > Settings > Open JSON > Ubuntu
-
-> "fontFace" : "DejaVu Sans Mono for Powerline"
+* Configure Ubuntu settings to use a Powerline font.
+* Accept user email and name as optional input parameters to configure Git.
+* Include VS Code config.
+* Include profile settings.
+* Symbolic links to /mnt/*.
