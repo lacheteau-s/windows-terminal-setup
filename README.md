@@ -35,6 +35,11 @@
 
 1. Open the Microsoft Store.
 2. Find and download Windows Terminal.
+3. Open Windows Terminal
+4. Click the dropdown arrow on top.
+5. Click on settings.
+6. Click on `Open JSON file` on the bottom left corner.
+7. Replace the content of the file with that of `terminal_settings.json` and save.
 
 ## Setup Linux as your default terminal
 
