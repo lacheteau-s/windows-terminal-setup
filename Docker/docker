@@ -1,0 +1,5 @@
+docker build --build-arg USERNAME=[USERNAME] --build-arg PASSWORD=[PASSWORD] -t [IMAGE NAME] .
+
+docker run -d --name [CONTAINER NAME] [IMAGE NAME]
+
+docker cp setup.sh test
